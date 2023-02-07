@@ -16,6 +16,9 @@ O construtor da classe deve receber o nome e a velocidade do corredor, pois a id
 
 Além dos métodos de acesso (_gets_), a classe deve sobrescrever também o método `prepararParaNovaCorrida` de modo que o corredor possa participar de diversas corridas.
 
+> Dica: pense que o método `prepararParaNovaCorrida` pode ser chamado várias vezes, sempre que o corredor for participar de uma nova corrida (e cada corrida pode ter uma distância diferente).
+Portanto, o método deve garantir um estado válido (valores dos atributos) para essa situação na qual o corredor está preparado para uma nova corrida, mas ainda não está correndo.
+
 Repare que a interface `Competidor` estende a interface `Runnable` e, portanto, a sua classe deverá implementar tanto os métodos da interface `Competidor` quanto o método `run` da interface `Runnable`.
 Por causa deste último método, **sua classe poderá ser usada como uma tarefa de uma thread**.
 
