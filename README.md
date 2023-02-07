@@ -55,11 +55,11 @@ Note que após iniciar a corrida, você precisa ficar clicando no botão `Atuali
 ## Passo 4 - Visualização automática da corrida
 
 Usar o botão `Atualizar` não é nada prático, certo?
-Vamos então criar uma thread para que a atualização seja feita de forma automática.
-Para isso altere o método `iniciarCorrida` da classe `Tela`:
+Vamos então criar agora mais uma thread para que a atualização seja feita de forma automática.
+Para isso, altere o método `iniciarCorrida` da classe `Tela`:
 
 1. Após o início das threads dos corredores, crie uma nova thread, passando como parâmetro um objeto de uma classe anônima que implemente a interface `Runnable`.
-  - Lembre-se que vimos como criar classes anônimas para tratar eventos de clique de botão.
+  - Lembre-se que vimos como criar classes anônimas na aula de Interfaces Gráficas, para tratar eventos de clique de botão.
 3. No método `run` da classe anônima, enquanto ainda houver corredores correndo, a corrida deve ser atualizada e a thread suspensa por 100 milissegundos.
   - Obs.: crie um método na classe `Tela` que retorne se ainda existe algum corredor correndo.
 4. Não se esqueça de iniciar a thread criada.
