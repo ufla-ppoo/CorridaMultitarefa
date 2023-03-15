@@ -47,11 +47,11 @@ public class Tela {
     private PainelDeDesenho painelDeDesenho;
 
     // lista dos competidores da corrida
-    List<Competidor> competidores;
+    private List<Competidor> competidores;
     // lista de threads para cada corredor;
-    List<Thread> threads;
+    private List<Thread> threads;
     // distância da corrida
-    int distanciaDaCorrida;
+    private int distanciaDaCorrida;
 
     /**
      * Cria a tela e deixa pronta para uso
