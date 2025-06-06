@@ -62,6 +62,10 @@ Para isso, implemente o seguinte algoritmo:
     > o que significa que ele corre um metro a cada 1/4 segundo (ou 250 milissegundos).
     > Logo, se ele acabou de correr um métro, a thread deve ser suspensa, neste caso, por 250 ms.
 
+Dica:
+- Em Java, a divisão de dois números inteiros retorna um número inteiro.
+- Para que a divisão retorne um número decimal você pode usar algum valor não inteiro na divisão (como `1.0` em vez de `1`, por exemplo).
+
 ## Passo 2 - Criar competidores a partir de um arquivo
 
 Tendo a classe `Corredor`, podemos agora criar os competidores da nossa corrida.
