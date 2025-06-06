@@ -55,12 +55,18 @@ O método `run` deve simular uma única corrida feita pelo corredor.
 Para isso, deve ser implementada uma estrutura de repetição que faça o corredor correr de acordo com a sua velocidade.
 Para isso, implemente o seguinte algoritmo:
 
+- Sinalize que o corredor agora está correndo.
 - Enquando a distância já percorrida for menor que a distância da corrida:
   - O corredor corre mais um metro.
   - E a `thread` atual deve suspensa pelo tempo necessário para que a velocidade do corredor seja simulada.
     > Por exemplo: suponha que a velocidade de um corredor seja de 4 metros por segundo;
     > o que significa que ele corre um metro a cada 1/4 segundo (ou 250 milissegundos).
     > Logo, se ele acabou de correr um métro, a thread deve ser suspensa, neste caso, por 250 ms.
+- E, por fim, sinalize que o corredor agora parou de correr.
+  - Obs.: é necessário garantir que essa sinalização sempre ocorra independentemente do loop ter sido executado até o final ou de
+    ter ocorrido alguma exceção na execução da thread.
+  - Isso é importante para que o botão _Interromper Corrida_ funcione corretamente, já que a classe `Tela` chama o método ` interrupt`
+    para a thread de cada corredor quando o usuário clica no botão, e isso gera uma exceção do tipo `InterruptedException`.
 
 Dica:
 - Em Java, a divisão de dois números inteiros retorna um número inteiro.
