@@ -1,0 +1,6 @@
+NOME        | VELOCIDADE
+Lesma       | 1
+Sonic       | 9
+Flash       | 7
+Tartaruga   | 2
+Usain Bolt  | 10

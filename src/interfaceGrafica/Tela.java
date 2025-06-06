@@ -75,7 +75,7 @@ public class Tela {
         competidores = new ArrayList<>();
         threads = new ArrayList<>();
 
-        // COMPLETE AQUI A CRIAÇÃO DOS COMPETIDORES
+        // PASSO 2: COMPLETE AQUI A CRIAÇÃO DOS COMPETIDORES
 
     }
 
@@ -174,12 +174,12 @@ public class Tela {
         if (distanciaDaCorrida > 0) {
             threads.clear();
 
-            // COLOQUE AQUI AS THREADS DE CADA COMPETIDOR
+            // PASSO 3: COLOQUE AQUI AS THREADS DE CADA COMPETIDOR
             
             
             painelDeDesenho.repaint();
 
-            // COLOQUE AQUI A THREAD DE VISUALIZAÇÃO AUTOMÁTICA
+            // PASSO 4: COLOQUE AQUI A THREAD DE VISUALIZAÇÃO AUTOMÁTICA
 
 
         }
