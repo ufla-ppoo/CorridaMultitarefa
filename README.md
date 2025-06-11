@@ -28,7 +28,7 @@ Execute o programa e veja a tela que é exibida.
 
 Veja que, por enquanto, esses botões na verdade não fazem nada, já que esta versão inicial ainda não trata 
 uma corrida propriamente dita.
-Para tratá-a teremos que fazer a implementação dos competidores da corrida.
+Para tratá-la, teremos que fazer a implementação dos competidores da corrida.
 
 O projeto possui uma interface chamada `Competidor` que define um contrato para um competidor de corridas.
 Ele traz também a classe chamada `Tela` que implementa uma interface gráfica que aparece ao executar o progama.
@@ -92,7 +92,7 @@ Por fim, use o método da classe criada acima dentro do método `criarCompetidor
 criados à lista de competidores do sistema.
 
 Execute o programa.
-Os corredores que presentes no arquivo devem agora aparecer na tela do programa.
+Os corredores presentes no arquivo devem agora aparecer na tela do programa.
 
 ## Passo 3 - Criar a thread de cada competidor
 
@@ -114,7 +114,7 @@ Usar o botão `Atualizar` não é nada prático, certo?
 Vamos então criar agora mais uma thread e usá-la para que a atualização da corrida seja feita de forma automática.
 
 Para tratar essa thread, vamos utilizar um conceito novo chamado **classe anônima**.
-Uma classe anônima é atalho sintático fornecido pela linguagem, que nos permite de maneira bem prática:
+Uma classe anônima é um atalho sintático fornecido pela linguagem, que nos permite de maneira bem prática:
 
 - Criar uma classe que implementa uma interface.
 - Instanciar um objeto dessa classe.
