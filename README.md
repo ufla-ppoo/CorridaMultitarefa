@@ -61,7 +61,7 @@ Para isso, implemente o seguinte algoritmo:
   - E a `thread` atual deve suspensa pelo tempo necessário para que a velocidade do corredor seja simulada.
     > Por exemplo: suponha que a velocidade de um corredor seja de 4 metros por segundo;
     > o que significa que ele corre um metro a cada 1/4 segundo (ou 250 milissegundos).
-    > Logo, se ele acabou de correr um métro, a thread deve ser suspensa, neste caso, por 250 ms.
+    > Logo, se ele acabou de correr um metro, a thread deve ser suspensa, neste caso, por 250 ms.
 - E, por fim, sinalize que o corredor agora parou de correr.
   - Obs.: é necessário garantir que essa sinalização sempre ocorra independentemente do loop ter sido executado até o final ou de
     ter ocorrido alguma exceção na execução da thread.
@@ -85,7 +85,7 @@ Para tratar isso, faça o seguinte:
 - O método deve criar os corredores de acordo com os dados do arquivo.
   > Dica 1: O método `split` da classe String permite _quebrar_ uma String em várias usando um caractere como separador.
   >         Mas como `|` é um caractere especial, para utilizá-lo  como separador, é necessário usar `split("\\|")`.
-  > Dica 2: O método `trim` da classe String retorna uma nova String sem os espaços do começo e do final da String. 
+  > Dica 2: O método `trim` da classe String retorna uma nova String sem os espaços do começo e do final da String passada por parâmetro. 
 - E retornar a lista de corredores.
 
 Por fim, use o método da classe criada acima dentro do método `criarCompetidores` da classe `Tela` para acrescentar os corredores
